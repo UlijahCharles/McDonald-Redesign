@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "CeraPro";
+  src: url("./assets/fonts/cerapro-regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CeraProBold";
+  src: url("./assets/fonts/cerapro-bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: CeraPro, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1% 5%;
+}
+
+.nav-company {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.nav-company img {
+  cursor: pointer;
+}
+
+.nav-logo__img {
+  width: 50px;
+}
+
+#site-search {
+  width: 300px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.nav-main-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.nav-main-menu p:hover {
+  font-weight: 800;
+  cursor: pointer;
+}
+.nav-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-user img {
+  width: 25px;
+  cursor: pointer;
+}
