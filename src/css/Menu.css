@@ -1,0 +1,179 @@
+.menu-nav {
+  padding: 3% 5%;
+}
+
+.menu-section {
+  padding: 0 5%;
+}
+
+.menu-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-nav-buttons {
+  display: flex;
+  margin-right: 5%;
+}
+
+.menu-nav-buttons > button {
+  width: 100%;
+  padding: 10% 20%;
+  white-space: nowrap;
+  background-color: transparent;
+  border-color: lightgray;
+  color: #333333;
+  font-weight: 400;
+  border-radius: 3px;
+  border-width: 3px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.menu-nav-buttons > button.active {
+  background-color: #ffcc00;
+  border-color: #ffcc00;
+  font-weight: 800;
+  transition:
+    border-color 0.25s ease-in,
+    background-color 0.25s ease-in;
+}
+
+.menu-nav-filter {
+  margin-top: 4rem;
+  list-style: none;
+  display: flex;
+  gap: 2%;
+  overflow-x: scroll;
+  justify-content: space-between;
+
+  /*Scrollbar*/
+
+  /* Firefox */
+  scrollbar-width: none;
+
+  /* IE and older Edge */
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.menu-list::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-list__type {
+  white-space: nowrap;
+  border-color: red;
+  font-weight: 400;
+  color: #515151;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.menu-list__type.active {
+  color: #da291c;
+}
+
+.indicator-container {
+  margin-top: 1%;
+}
+
+#indicator-under {
+  background-color: lightgray;
+  width: 100%;
+  height: 4px;
+  border-radius: 25px;
+}
+
+#indicator {
+  position: absolute;
+  height: 5px;
+  background: #da291c;
+  border-radius: 25px;
+  transform: translateY(-4px);
+  transition:
+    left 0.25s ease,
+    width 0.25s ease;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 0.8rem;
+  /* justify-content: space-between; */
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 1% 2% 2% 2%;
+  background-color: rgb(244, 244, 244);
+  border-radius: 0.5rem;
+  justify-content: space-between;
+}
+
+.menu-item__img {
+  width: 250px;
+  mix-blend-mode: multiply;
+}
+
+.menu-item__title {
+  font-size: 1.4rem;
+  text-align: left;
+  color: #939393;
+  font-weight: 600;
+}
+
+.menu-item__container {
+  display: flex;
+}
+
+.menu-item__price {
+  color: #da291c;
+  font-size: 1.4rem;
+  margin-right: 70%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item__button {
+  width: 50px;
+}
+.fadeRight {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 0%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 0%,
+    black 90%,
+    transparent
+  );
+}
+
+.fadeLeft {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 90%,
+    black 0%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 90%,
+    black 0%,
+    transparent
+  );
+}

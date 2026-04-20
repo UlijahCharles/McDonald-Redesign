@@ -1,0 +1,38 @@
+.trending-section {
+  padding: 0 5%;
+  display: flex;
+  margin: 8% 0;
+}
+
+.trending-container {
+}
+.trending-title {
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: left;
+  width: 20%;
+  text-transform: uppercase;
+}
+
+.trending-button-container__button {
+  background-color: #ffcc00;
+  padding: 0.5%;
+  margin-top: 2%;
+  width: 40px;
+  cursor: pointer;
+}
+
+.trending-item-container {
+  display: flex;
+  list-style-type: none;
+  gap: 2%;
+  overflow-x: hidden;
+}
+
+.trending-item {
+  width: 30%;
+  padding: 1% 2% 1% 2%;
+  background-color: rgb(244, 244, 244);
+  border-radius: 0.5rem;
+  text-align: center;
+}

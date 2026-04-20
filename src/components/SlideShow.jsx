@@ -1,63 +1,74 @@
-import { useEffect, useState } from "react";
-import slide1 from "../assets/slide1.jpg";
-import slide2 from "../assets/slide2.jpg";
-import slide3 from "../assets/slide3.jpg";
-import slide4 from "../assets/slide4.jpg";
+import { useState } from "react";
+import Slide from "./Slide";
+import slideData from "../assets/data/slide.json";
+import arrowRight from "../assets/arrow-right.png";
+import arrowLeft from "../assets/arrow-left.png";
+import slash from "../assets/slash.png";
 
 const SlideShow = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
-  const slides = [slide1, slide2, slide3, slide4];
-  const slideDom = document.querySelector(".slideshow");
+  const slides = slideData.map((slide) => (
+    <Slide key={slide.id} slide={slide} />
+  ));
+  console.log(slides);
 
   function handleSlideChange(type) {
-    if (type === "next" && currentSlide < 4) {
-      setCurrentSlide((currentSlide) => {
-        return currentSlide + 1;
-      });
-    } else if (type === "prev" && currentSlide > 1) {
-      setCurrentSlide((currentSlide) => {
-        return currentSlide - 1;
-      });
-    }
+    const infoContainer = document.querySelector(".slide-info-container");
+    const imageContainer = document.querySelector(".slide-image-container");
+
+    infoContainer.classList.add("close-left");
+    imageContainer.classList.add("close-right");
+
+    const timeoutId = setTimeout(() => {
+      if (type === "next" && currentSlide < slides.length) {
+        setCurrentSlide((currentSlide) => {
+          return currentSlide + 1;
+        });
+      } else if (type === "prev" && currentSlide > 1) {
+        setCurrentSlide((currentSlide) => {
+          return currentSlide - 1;
+        });
+      }
+    }, 3000);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
   }
-
-  useEffect(() => {
-    if (slideDom) {
-      slideDom.classList.remove("slide-img");
-      const timeoutId = setTimeout(() => {
-        slideDom.classList.add("slide-img");
-      }, 1);
-
-      return () => {
-        clearTimeout(timeoutId);
-      };
-    }
-  }, [currentSlide]);
 
   return (
     <div className="slideshow-container">
-      <img
-        className="slideshow slide-img"
-        src={slides[currentSlide - 1]}
-        alt="Slide 1"
-      />
-      <button
-        onClick={() => {
-          handleSlideChange("prev");
-        }}
-        disabled={currentSlide === 1}
-      >
-        ⬅️
-      </button>
-      {`${currentSlide} ╱ 4`}
-      <button
-        onClick={() => {
-          handleSlideChange("next");
-        }}
-        disabled={currentSlide === 4}
-      >
-        ➡️
-      </button>
+      {slides[currentSlide - 1]}
+      <div className="slideshow-controls">
+        <button
+          onClick={() => {
+            handleSlideChange("prev");
+          }}
+          disabled={currentSlide === 1}
+        >
+          <img
+            className="control-img control-img__left"
+            src={arrowLeft}
+            alt=""
+          />
+        </button>
+        {`${currentSlide}`}{" "}
+        <img className="control-img slash" src={slash} alt="" />{" "}
+        {`${slides.length}`}
+        <button
+          onClick={() => {
+            handleSlideChange("next");
+          }}
+          disabled={currentSlide === slides.length}
+        >
+          <img
+            className="control-img control-img__right"
+            src={arrowRight}
+            alt=""
+          />
+        </button>
+      </div>
+      <progress max={slides.length} value={currentSlide} />
     </div>
   );
 };

@@ -17,6 +17,7 @@ const useLocation = () => {
           longitude: position.coords.longitude,
         });
         setError(null);
+        return position;
       },
       (err) => {
         setError(err.message);

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "694974e72f9242e719db9216",
+    "image": "https://s7d1.scene7.com/is/image/mcdonalds/COM_1PUB_Meal_FreeLargeFries:1-column-desktop?resmode=sharp2",
+    "title": "Free large Fries w/ $1 min. purchase",
+    "description": "Free large Fries to keep you company. Download the app and get 'em with your first purchase of $1+.* Every $1 you spend earns 100 points, redeemable for free food.",
+    "buttonText": "Get Free Large Fries in the App"
+  },
+  {
+    "id": "694974e79e6264e0c6929238",
+    "image": "https://s7d1.scene7.com/is/image/mcdonalds/1PUB_Storefront_2336x1040:1-column-desktop?resmode=sharp2",
+    "title": "Get your McD’s anywhere you want",
+    "description": "Searching for a way to have McDonald’s brought to you without downloading an app? Order with McDonald’s Delivery, a quick and easy way to enjoy all of your favorites wherever you are. If you want to earn points for your order, place your order in the app.*",
+    "buttonText": "Order Delivery"
+  },
+  {
+    "id": "694974e7a35f3c2b8bf00f02",
+    "image": "https://s7d1.scene7.com/is/image/mcdonalds/SnackWrap_COM_1Pub:1-column-desktop?resmode=sharp2",
+    "title": "Snack Wrap® is back",
+    "description": "After 9 years of asking, you win. Choose between a Ranch Snack Wrap and Spicy Snack Wrap, or double up and enjoy one of each. Waiting has a way of working up an appetite.PS: It’s all thanks to you, sorry it took so long.",
+    "buttonText": "Order in the App"
+  },
+  {
+    "id": "694974e76ddfcc1e50ab3bd7",
+    "image": "https://s7d1.scene7.com/is/image/mcdonalds/1PUB-MCVALUE-INTRO-1:1-column-desktop?resmode=sharp2",
+    "title": "Wanna save $$? Do it with McValue®",
+    "description": "Get more than you expect (and for less) with meal deals, all-day deals, stuff-you-can’t-stop-thinking-about deals & more with McValue. Check out the three ways to save.* 1. Meal Deals starting at $5 2. Buy One, Add One for $1 all day long 3. App Exclusive Deals",
+    "buttonText": "Order in the App"
+  },
+  {
+    "id": "694974e7861d06932e7575cb",
+    "image": "https://s7d1.scene7.com/is/image/mcdonalds/1PUB_Breakfast_2336x1040:1-column-desktop?resmode=sharp2",
+    "title": "Breakfast comes first. Don’t forget it.",
+    "description": "You don’t wake up dreaming of Fries, but you do dream of a McGriddles®, McMuffin®, Biscuit or Hash Browns. It’s time to put lunch back in its place—order breakfast when you can in the app for pickup or McDelivery.*",
+    "buttonText": "Order in the App"
+  },
+  {
+    "id": "694974e79e90d1770b841fbc",
+    "image": "https://s7d1.scene7.com/is/image/mcdonalds/1PUB_DigitalExperience_McDelivery:1-column-desktop?resmode=sharp2",
+    "title": "McDelivery® is where you get food. And free food. ",
+    "description": "Every McDelivery order in the app lets you earn MyMcDonald’s Rewards points—use those to get your free food. And, yup, you can get ‘em delivered, too. Imagine, McD’s you didn’t pay for brought right to you. Check out how easy ordering delivery is in the app.*",
+    "buttonText": "Earn Points with McDelivery"
+  },
+  {
+    "id": "694974e7c002c8c37bc87690",
+    "image": "https://s7d1.scene7.com/is/image/mcdonalds/MDBBPG24035_2336x1040_CLGRP_WEBSITE_BANNER_5-20-2024:1-column-desktop?resmode=sharp2",
+    "title": "‘More Black Designers’ is the New Black",
+    "description": "The 2024 McDonald’s Change of Fashion Program is focused on driving change when it comes to Black representation in fashion. The industry frequently pulls inspiration from Black culture, but doesn’t always embrace Black creatives. After all, only 7.3% of American fashion designers are Black.* So, we’re pairing five, rising Black designers with five fashion insiders for career-changing mentorships. The program will also provide access and resources, and give their brands a chance to shine.",
+    "buttonText": "Follow on Instagram @wearegolden"
+  },
+  {
+    "id": "694974e7d35fff8fb06787bd",
+    "image": "https://s7d1.scene7.com/is/image/mcdonalds/1PUB_ROA_2336x1040:1-column-desktop?resmode=sharp2",
+    "title": "New: Faster Faves, Only in the App",
+    "description": "We now prep when you’re on the way if you choose Curbside, Front Counter—or dine in for Table Service. Just order ahead in the app to save time. Because waiting in line for faves? Not our thing either.*",
+    "buttonText": "Order Ahead in the App"
+  }
+]
