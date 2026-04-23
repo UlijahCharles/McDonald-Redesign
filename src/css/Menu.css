@@ -2,6 +2,13 @@
   padding: 3% 5%;
 }
 
+.menu-title {
+  color: rgb(53, 53, 53);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 4rem;
+}
+
 .menu-section {
   padding: 0 5%;
 }

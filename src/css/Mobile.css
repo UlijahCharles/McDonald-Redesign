@@ -1,0 +1,48 @@
+.app-section {
+  margin: 5% 5%;
+}
+
+.app-section__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4%;
+  font-weight: 700;
+  color: rgb(53, 53, 53);
+}
+
+.mobile-grid {
+  display: grid;
+  grid-template:
+    "a c d"
+    "b c e";
+  grid-template-columns: 0.25fr max-content 0.25fr;
+  grid-template-rows: 0.5fr max-content 0.5fr;
+  justify-content: center;
+}
+
+.app-item__one {
+  grid-area: a;
+}
+
+.app-item__two {
+  grid-area: b;
+}
+
+.app-img {
+  grid-area: c;
+}
+
+.app-item__three {
+  grid-area: d;
+}
+
+.app-item__four {
+  grid-area: e;
+}
+
+.download-container {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+}

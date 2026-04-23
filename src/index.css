@@ -88,6 +88,10 @@
   background-color: #ffffff;
 }
 
+.main {
+  animation: fadeInLoad 5s forwards;
+}
+
 .nav {
   display: flex;
   animation: fadeInLoad 5s forwards;
@@ -262,7 +266,6 @@ progress {
   border: none;
   background-color: transparent;
   padding: 0 1%;
-  border-radius: 50%;
   cursor: pointer;
   font-size: 2rem;
 }
@@ -283,6 +286,28 @@ progress {
   animation: hoverConfirmLeft 1s infinite alternate;
 }
 
+progress {
+  appearance: none;
+  height: 4px;
+}
+
+/* Track background */
+progress::-webkit-progress-bar {
+  background-color: #d3d3d3;
+  border-radius: 5px;
+}
+
+/* Progress fill (Chrome/Safari) */
+progress::-webkit-progress-value {
+  background-color: #52502f;
+  border-radius: 5px;
+}
+
+/* Progress fill (Firefox) */
+progress::-moz-progress-bar {
+  background-color: #d3d3d3;
+  border-radius: 5px;
+}
 .slide-info-container {
   flex-basis: 60%;
   animation: fadeInSlideShowLeft 3s forwards;
@@ -298,9 +323,10 @@ progress {
 }
 
 .slide-title {
+  color: rgb(53, 53, 53);
+  text-transform: uppercase;
+  font-weight: 800;
   font-size: 4rem;
-  font-weight: 700;
-  color: #333333;
   line-height: 1.2;
 }
 

@@ -7,8 +7,10 @@
 .trending-container {
 }
 .trending-title {
-  font-size: 4rem;
+  color: rgb(53, 53, 53);
+  text-transform: uppercase;
   font-weight: 800;
+  font-size: 4rem;
   text-align: left;
   width: 20%;
   text-transform: uppercase;

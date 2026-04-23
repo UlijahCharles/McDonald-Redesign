@@ -79,7 +79,7 @@ function Menu() {
     <>
       <nav className="menu-nav">
         <header className="menu-nav-header">
-          <h1>Menu</h1>
+          <h2 className="menu-title">Menu</h2>
 
           <div className="menu-nav-buttons">
             <button
